@@ -7,10 +7,13 @@ namespace leetcodeCSharp
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+
+            RunExample run;
             
             // 有效括号
-            // Solution20 s = new Solution20();
-            // Console.Write(s.IsValid("((("));
+            run = new Solution20();
+            run.RunInTime();
+
         }
     }
 }

@@ -1,7 +1,8 @@
-
+using System;
 using System.Collections.Generic;
+
 ///有效的括号
-public class Solution20 {
+public class Solution20: RunExample {
     public bool IsValid(string s) {
         Stack<char> st = new Stack<char>();
 
@@ -20,5 +21,11 @@ public class Solution20 {
                 st.Push(c);
         }
         return st.Count == 0;
+    }
+
+    public override void Run()
+    {
+        string s = "((({})))";
+        Console.WriteLine(IsValid(s));
     }
 }
